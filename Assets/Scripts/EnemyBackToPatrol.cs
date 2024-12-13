@@ -10,7 +10,7 @@ public class EnemyBackToPatrol : State
 
     public override void OnEnter(Vector3 target)
     {
-        _path = GameManager.Instance.pf.AStar(GetNearestNode(), GetNearestNodeToTarget(target));
+        _path = GameManager.Instance.pf.ThetaStar(GetNearestNode(), GetNearestNodeToTarget(target));
     }
 
     public Node GetNearestNode()
