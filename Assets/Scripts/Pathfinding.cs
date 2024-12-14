@@ -102,8 +102,8 @@ public class Pathfinding : MonoBehaviour
         return path;
     }
 
-    public bool InSight(Vector3 A, Vector3 B)
+    public bool InSight(Vector3 a, Vector3 b)
     {
-        return !Physics.Raycast(A - B, B - A, Vector3.Distance(A, B), wallMask);
+        return !Physics.Raycast(a, b - a, Vector3.Distance(a, b), wallMask);
     }
 }

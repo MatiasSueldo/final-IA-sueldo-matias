@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EditableWallScript : MonoBehaviour
 {
@@ -13,17 +14,34 @@ public class EditableWallScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(2))
         {
-            Debug.Log("E pressed");
-            if (gameObject.layer == 0)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if(Physics.Raycast(ray, out hit))
             {
-                gameObject.layer = 3;
+                if (hit.collider.gameObject == gameObject)
+                {
+                    Debug.Log("Hit");
+                    if (gameObject.layer == 0)
+                    {
+                        gameObject.layer = 3;
+                        PaintGameObject(gameObject, Color.red);
+                    }
+                    else
+                    {
+                        gameObject.layer = 0;
+                        PaintGameObject(gameObject, Color.blue);
+                    }
+                    EventManager.TriggerEvent(EventsType.WALL_UPDATE);
+                    
+                }
             }
-            else
-            {
-                gameObject.layer = 0;
-            }
+
         }
+    }
+    public void PaintGameObject(GameObject obj, Color color)
+    {
+        obj.GetComponent<Renderer>().material.color = color;
     }
 }

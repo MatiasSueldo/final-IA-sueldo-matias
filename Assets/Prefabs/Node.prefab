@@ -48,6 +48,12 @@ MonoBehaviour:
   cost: 1
   isBlocked: 0
   _textCost: {fileID: 0}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  onEditableWallTriggered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7343503533303584584
 GameObject:
   m_ObjectHideFlags: 0
