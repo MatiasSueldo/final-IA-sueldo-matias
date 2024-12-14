@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private Node _goalNode;
     public Pathfinding pf;
     [SerializeField] private List<Node> allNodes = new List<Node>();
+    public LayerMask WallMask;
 
     public static GameManager Instance;
 

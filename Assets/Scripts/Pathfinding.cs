@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pathfinding : MonoBehaviour
@@ -101,7 +102,21 @@ public class Pathfinding : MonoBehaviour
         }
         return path;
     }
+    public List<Node> CalculateMovement(Node start, Node goal)
+    {
 
+        if( InSight(start.transform.position, goal.transform.position))
+        {
+            List<Node> nodelist = new();
+            nodelist.Add(goal);
+            return nodelist;
+        }
+        else
+        {
+            return ThetaStar(start, goal);
+
+        }
+    }
     public bool InSight(Vector3 a, Vector3 b)
     {
         return !Physics.Raycast(a, b - a, Vector3.Distance(a, b), wallMask);

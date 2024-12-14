@@ -12,7 +12,7 @@ public class EnemyChase : State
     public override void OnEnter(Vector3 target)
     {
         _target = target;
-        _path = GameManager.Instance.pf.ThetaStar(GetNearestNode(), GetNearestNodeToTarget(target));
+        _path = GameManager.Instance.pf.CalculateMovement(GetNearestNode(), GetNearestNodeToTarget(target));
     }
 
     public Node GetNearestNode()
@@ -61,13 +61,20 @@ public class EnemyChase : State
         {
             Vector3 dir = _path[0].transform.position - enemy.transform.position;
             dir.z = 0;
+            //Intento validar si se va a poder llegar al proximo nodo
+            /*if (!InSight(_path[1].transform.position, _path[0].transform.position))
+            {
+                fsm.ChangeState(EnemyState.Idle, Vector3.zero);
+            }*/
             if (dir.magnitude <= 0.5)
             {
+                
                 _path.RemoveAt(0);
-
+                
             }
             else
             {
+               
                 enemy.Move(dir);
             }
 
@@ -91,5 +98,9 @@ public class EnemyChase : State
     {
         _path = path;
         _path?.Reverse();
+    }
+    public bool InSight(Vector3 a, Vector3 b)
+    {
+        return !Physics.Raycast(a, b - a, Vector3.Distance(a, b), GameManager.Instance.WallMask);
     }
 }
