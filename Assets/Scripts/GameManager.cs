@@ -9,12 +9,24 @@ public class GameManager : MonoBehaviour
     public Pathfinding pf;
     [SerializeField] private List<Node> allNodes = new List<Node>();
     public LayerMask WallMask;
+    public List<Agent> redAgents;
+    public List<Agent> greenAgents;
+    public GameObject redBase;
+    public GameObject greenBase;
 
     public static GameManager Instance;
 
     public void SetNodes(List<Node> nodes)
     {
         allNodes=nodes;
+    }
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+        redAgents = new();
+
+        greenAgents = new();
     }
 
     public void SetStartingNode(Node node)
@@ -34,8 +46,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(this);
+
     }
 
     // Update is called once per frame

@@ -58,16 +58,26 @@
     <Analyzer Include="F:\Program Files\Unity\2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Agent\AgentFiniteStateMachine.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
+    <Compile Include="Assets\baseScript.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\EditableWallScript.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentIdle.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentChase.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentState.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentAttack.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\FiniteStateMachine.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\EnemyBackToPatrol.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\State.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentFollow.cs" />
+    <Compile Include="Assets\Scripts\Agent\Agent.cs" />
     <Compile Include="Assets\Scripts\EnemyIdle.cs" />
+    <Compile Include="Assets\Scripts\Agent\AgentBackToBase.cs" />
     <Compile Include="Assets\Scripts\EnemyChase.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\PriorityQueue.cs" />

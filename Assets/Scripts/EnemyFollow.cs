@@ -37,7 +37,7 @@ public class EnemyFollow : State
         }
         else
         {
-            fsm.ChangeState(EnemyState.BackToPatrol, enemy.GetWayPoints()[enemy.GetWayPointNumber()].transform.position);
+            fsm.ChangeState(EnemyState.Idle, Vector3.zero);
         }
     }
 }
