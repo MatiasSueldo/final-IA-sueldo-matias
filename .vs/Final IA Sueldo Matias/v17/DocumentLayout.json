@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\agent\\agentchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\agent\\agentchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\finitestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finitestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\assets\\scripts\\agent\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\agent\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\agent\\agentbacktobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\agent\\agentbacktobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\basescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\basescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\agent\\agentattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\agent\\agentattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|f:\\davinci\\aplicacion de motores 2\\hacknslash\\final ia sueldo matias\\assets\\scripts\\agent\\agentfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C075B30-8DC2-FD1B-8911-A03C8C03E535}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\agent\\agentfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,14 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgentChase.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentChase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\AgentChase.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentChase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Agent\\AgentChase.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwGUAAAA8AAAA",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T16:09:58.481Z",
+              "WhenOpened": "2024-12-15T21:36:50.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FiniteStateMachine.cs",
+              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\FiniteStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FiniteStateMachine.cs",
+              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\FiniteStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FiniteStateMachine.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA9wD0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:36:25.733Z",
               "EditorCaption": ""
             },
             {
@@ -59,80 +64,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgentBackToBase.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentBackToBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\AgentBackToBase.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentBackToBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Agent\\AgentBackToBase.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBcAAABpAAAA",
+              "DocumentIndex": 1,
+              "Title": "EnemyAttack.cs",
+              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\EnemyAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAttack.cs",
+              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\EnemyAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyAttack.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T15:51:35.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowA4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T15:42:46.357Z",
+              "WhenOpened": "2024-12-15T21:34:35.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "baseScript.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\baseScript.cs",
-              "RelativeDocumentMoniker": "Assets\\baseScript.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\baseScript.cs",
-              "RelativeToolTip": "Assets\\baseScript.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAQAAAASAAAA",
+              "Title": "AgentFollow.cs",
+              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\AgentFollow.cs",
+              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Agent\\AgentFollow.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T15:41:31.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AgentAttack.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\AgentAttack.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\AgentAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Agent\\AgentAttack.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T06:06:02.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Agent.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\Agent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\Agent.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\Agent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Agent\\Agent.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAACgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T06:04:30.185Z",
+              "WhenOpened": "2024-12-15T21:05:45.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Bullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
-              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Bullet.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAqwB8AAAAAAAAA",
+              "Title": "Agent.cs",
+              "DocumentMoniker": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\Agent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Agent\\Agent.cs",
+              "ToolTip": "F:\\Davinci\\Aplicacion de motores 2\\HacknSlash\\Final IA Sueldo Matias\\Assets\\Scripts\\Agent\\Agent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Agent\\Agent.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwD0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T06:02:53.44Z",
+              "WhenOpened": "2024-12-15T21:04:50.817Z",
               "EditorCaption": ""
             }
           ]

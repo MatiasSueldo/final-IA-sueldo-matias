@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\EnemyIdle.cs" />
     <Compile Include="Assets\Scripts\Agent\AgentBackToBase.cs" />
     <Compile Include="Assets\Scripts\EnemyChase.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\PriorityQueue.cs" />
     <Compile Include="Assets\Scripts\Pathfinding.cs" />

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int speed;
-    Agent agent;
+    bool _redAgent;
     Vector3 target;
     Vector3 direction;
     // Start is called before the first frame update
@@ -13,10 +13,10 @@ public class Bullet : MonoBehaviour
     {
         direction= (target - transform.position).normalized;
     }
-    public void Initialize(Agent agentServed,Vector3 attackTarget)
+    public void Initialize(bool redAgent, Vector3 attackTarget)
     {
         target = attackTarget;
-        agent = agentServed;
+        _redAgent = redAgent;
     }
 
     // Update is called once per frame
@@ -29,12 +29,12 @@ public class Bullet : MonoBehaviour
         Agent colliderAgent = other.gameObject.GetComponent<Agent>();
         if (colliderAgent != null)
         {
-            if (colliderAgent.redAgent != agent.redAgent)
+            if (colliderAgent.redAgent != _redAgent)
             {
                 colliderAgent.Hurt();
                 Destroy(this.gameObject);
             }
-        }
+        } 
         if (other.gameObject.layer == 6)
         {
             Destroy(this.gameObject);

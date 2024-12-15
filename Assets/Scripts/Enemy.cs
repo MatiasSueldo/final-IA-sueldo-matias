@@ -9,8 +9,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float velocity;
     [SerializeField] protected int waypointNumber = 0;
     [SerializeField] protected EnemyFieldOfView fieldOfView;
-
+    [SerializeField] public EnemyState currentState;
     [SerializeField] protected int mouseClick;
+    public bool shootCoroutineActive = false;
+    public GameObject bulletPrefab;
+    public bool redAgent = false;
+    public int enemyAttackRadius;
+
+    public List<Agent> enemyAgents;
 
 
     // Start is called before the first frame update
@@ -23,6 +29,8 @@ public class Enemy : MonoBehaviour
         fsm.AddState(EnemyState.BackToPatrol, new EnemyBackToPatrol());
         fsm.AddState(EnemyState.Follow, new EnemyFollow());
         fsm.AddState(EnemyState.Idle, new EnemyIdle());
+        fsm.AddState(EnemyState.Attack, new EnemyAttack());
+
         fsm.ChangeState(EnemyState.Idle, transform.position);
         EnemyFollow.onFoundPlayer += SetFollowState;
 
@@ -70,5 +78,27 @@ public class Enemy : MonoBehaviour
     public void SetWayPointNumber(int number)
     {
         this.waypointNumber = number;
+    }
+
+    public void shoot(Vector3 attackTarget)
+    {
+        if (!shootCoroutineActive)
+        {
+            StartCoroutine(shootCoroutine(attackTarget));
+
+        }
+    }
+
+    IEnumerator shootCoroutine(Vector3 attackTarget)
+    {
+        shootCoroutineActive = true;
+        GameObject bullet = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation);
+        bullet.GetComponent<Bullet>().Initialize(this.redAgent, attackTarget);
+        yield return new WaitForSeconds(1.5f);
+        shootCoroutineActive = false;
+    }
+    public bool InSight(Vector3 a, Vector3 b)
+    {
+        return !Physics.Raycast(a, b - a, Vector3.Distance(a, b), GameManager.Instance.WallMask);
     }
 }

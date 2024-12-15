@@ -172,8 +172,8 @@ public class AgentFollow : AgentState
             return Seek(transform.forward, _maxSpeed);
         }*/
 
-        Debug.DrawLine(enemy.transform.position + enemy.transform.right * enemy.size, enemy.transform.position + enemy.transform.right * enemy.size + enemy.transform.forward * enemy.dodgeRadius, Color.green);
-        Debug.DrawLine(enemy.transform.position - enemy.transform.right * enemy.size, enemy.transform.position - enemy.transform.right * enemy.size + enemy.transform.forward * enemy.dodgeRadius, Color.green);
+        Debug.DrawLine(enemy.transform.position + enemy.transform.up * enemy.size, enemy.transform.position + enemy.transform.up * enemy.size + enemy.transform.forward * enemy.dodgeRadius, Color.green);
+        Debug.DrawLine(enemy.transform.position - enemy.transform.up * enemy.size, enemy.transform.position - enemy.transform.up * enemy.size + enemy.transform.forward * enemy.dodgeRadius, Color.green);
 
         if (Physics.Raycast(enemy.transform.position + enemy.transform.up * enemy.size, enemy.transform.forward, enemy.dodgeRadius, enemy.obstacleLayer))
         {

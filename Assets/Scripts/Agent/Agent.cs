@@ -133,7 +133,7 @@ public class Agent : MonoBehaviour
     {
         shootCoroutineActive = true;
         GameObject bullet = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation);
-        bullet.GetComponent<Bullet>().Initialize(this, attackTarget);
+        bullet.GetComponent<Bullet>().Initialize(this.redAgent, attackTarget);
         yield return new WaitForSeconds(1.5f);
         shootCoroutineActive = false;
     }
