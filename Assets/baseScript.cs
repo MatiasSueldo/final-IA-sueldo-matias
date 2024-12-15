@@ -27,7 +27,7 @@ public class baseScript : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         Agent agent = other.gameObject.GetComponent<Agent>();
         if (agent != null && agents.Contains(agent))

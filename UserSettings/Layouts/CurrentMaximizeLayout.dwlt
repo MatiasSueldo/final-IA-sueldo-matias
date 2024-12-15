@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 65142
+  controlID: 66413
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 65143
+  controlID: 66414
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 65144
+  controlID: 66415
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -726,9 +726,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 87.76207, y: 19.51358, z: 64.154526}
+    m_Target: {x: 88.39273, y: 66.80911, z: 65.17805}
     speed: 2
-    m_Value: {x: 87.76207, y: 19.51358, z: 64.154526}
+    m_Value: {x: 88.39273, y: 66.80911, z: 65.17805}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -774,9 +774,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.07098047, y: -0.19093631, z: 0.013501253, w: -0.97901374}
+    m_Target: {x: 0.17837197, y: -0.06099144, z: -0.0114295725, w: -0.9820785}
     speed: 2
-    m_Value: {x: -0.070975326, y: -0.19092247, z: 0.013500274, w: -0.9789428}
+    m_Value: {x: 0.17835902, y: -0.06098701, z: -0.011428743, w: -0.9820072}
   m_Size:
     m_Target: 43.030815
     speed: 2
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -920,17 +920,17 @@ MonoBehaviour:
     y: 621
     width: 1650
     height: 326
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 4
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 694
-    width: 1259
+    width: 1649
     height: 305
   m_SerializedDataModeController:
     m_DataMode: 0

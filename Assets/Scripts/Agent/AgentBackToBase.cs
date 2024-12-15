@@ -90,7 +90,15 @@ public class AgentBackToBase : AgentState
             dir.z = 0;
             if (dir.magnitude <= 0.1)
             {
-                fsm.ChangeState(AgentStates.Follow, enemy.target.transform.position);
+                if (enemy.life >= 100)
+                {
+                    fsm.ChangeState(AgentStates.Follow, enemy.target.transform.position);
+
+                }
+                else
+                {
+                    enemy.recoverLifeCoroutine();
+                }
             }
             else
             {
