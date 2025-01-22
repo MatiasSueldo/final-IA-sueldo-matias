@@ -23,6 +23,8 @@ jobs:
             ${{ runner.os }}-unity-library-
       - name: Run Tests
         uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} 
         with:
           projectPath: .
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
