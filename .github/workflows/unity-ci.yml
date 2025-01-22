@@ -14,27 +14,23 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Cache Library
+      - name: Cache Library 
         uses: actions/cache@v3
         with:
           path: Library
           key: ${{ runner.os }}-unity-library-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-unity-library-
-
       - name: Run Tests
         uses: game-ci/unity-test-runner@v2
         with:
           projectPath: .
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
           coverageResultsPath: 'CodeCoverage'
-
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
           files: CodeCoverage/Report.xml 
-
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         with:
