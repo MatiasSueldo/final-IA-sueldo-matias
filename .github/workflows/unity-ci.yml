@@ -41,7 +41,7 @@ jobs:
       - name: List Files 2
         run: ls -l CodeCoverage
       - name: List Files 3
-        run: ls -l CodeCoverage/report
+        run: ls -l CodeCoverage/Report
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
