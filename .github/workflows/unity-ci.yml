@@ -45,14 +45,13 @@ jobs:
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
-          files: CodeCoverage/Report.xml 
+          files: CodeCoverage/Report/Summary.xml
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         with:
           name: Test Results
-          path: CodeCoverage/TestResults.xml
+          path: CodeCoverage/Report/Summary.xml
       - name: Check Code Coverage
         run: |
-          coverage=$(xmllint --xpath '//coverage/@line-rate' CodeCoverage/Report.xml)
+          coverage=$(xmllint --xpath '//coverage/@line-rate' CodeCoverage/Report/Summary.xml)
           echo "Coverage: $coverage"
-          # Add your logic here to compare $coverage with your threshold
