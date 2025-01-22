@@ -34,6 +34,10 @@ jobs:
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
           coverageResultsPath: 'CodeCoverage'
           failOnCoverage: 75 
+      - name: Print Working Directory
+        run: pwd
+      - name: List Files
+        run: ls -l
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
