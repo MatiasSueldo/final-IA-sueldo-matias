@@ -38,8 +38,10 @@ jobs:
         run: pwd
       - name: List Files
         run: ls -l
-      - name: List Files
+      - name: List Files 2
         run: ls -l CodeCoverage
+      - name: List Files 3
+        run: ls -l CodeCoverage/report
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
