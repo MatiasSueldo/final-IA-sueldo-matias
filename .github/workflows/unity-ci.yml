@@ -53,10 +53,10 @@ jobs:
           path: CodeCoverage/**/*.xml
       - name: Check Code Coverage
         run: |
-            coverage=$(xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml)
-            echo "Coverage: $coverage"
-            threshold="0.80"  # Set your desired threshold here
-            if (( $(echo "$coverage < $threshold" | bc -l) )); then
-              echo "Code coverage ($coverage) is below the threshold ($threshold)"
-              exit 1  # Fail the workflow
-            fi
+          coverage=$(xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml)
+          echo "Coverage: $coverage"
+          threshold="0.80" 
+          if (( $(echo "$coverage < $threshold" | bc -l) )); then 
+            echo "Code coverage ($coverage) is below the threshold ($threshold)"
+            exit 1 
+          fi
