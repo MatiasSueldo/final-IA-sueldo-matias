@@ -43,7 +43,7 @@ jobs:
       - name: List Files 3
         run: ls -l CodeCoverage/Report
       - name: Upload Code Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }} 
           files: CodeCoverage/**/*.xml
