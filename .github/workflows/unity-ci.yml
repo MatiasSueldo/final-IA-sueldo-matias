@@ -54,11 +54,21 @@ jobs:
           path: CodeCoverage/**/*.xml
       - name: Check Code Coverage
         run: |
+          echo "Running xmllint command..."
+          xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml
+          # Extract coverage value from the XML file
           coverage=$(xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml)
-          echo "Coverage: $coverage"
-          threshold="0.80" 
 
-          # Ensure the coverage value is properly handled as a floating-point number
+          # Check if coverage is empty
+          if [[ -z "$coverage" ]]; then
+            echo "Error: Coverage value is missing or invalid."
+            exit 1
+          fi
+
+          echo "Coverage: $coverage"
+          threshold="0.80"
+
+          # Compare coverage against the threshold using bc
           if (( $(echo "$coverage < $threshold" | bc -l) )); then 
             echo "Code coverage ($coverage) is below the threshold ($threshold)"
             exit 1 
