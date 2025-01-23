@@ -45,13 +45,13 @@ jobs:
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
         with:
-          files: CodeCoverage/Report/Summary.xml
+          files: CodeCoverage/**/*.xml
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         with:
           name: Test Results
-          path: CodeCoverage/Report/Summary.xml
+          path: CodeCoverage/**/*.xml
       - name: Check Code Coverage
         run: |
-          coverage=$(xmllint --xpath '//coverage/@line-rate' CodeCoverage/Report/Summary.xml)
+          coverage=$(xmllint --xpath '//coverage/@line-rate' CodeCoverage/**/*.xml)
           echo "Coverage: $coverage"
