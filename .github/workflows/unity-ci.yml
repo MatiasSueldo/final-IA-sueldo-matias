@@ -1,0 +1,75 @@
+name: Unity CI
+
+on:
+  pull_request:
+    branches:
+      - main 
+  push:
+    branches:
+      - main 
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install libxml2-utils
+        run: sudo apt-get install libxml2-utils
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Cache Library 
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: ${{ runner.os }}-unity-library-${{ hashFiles('**/Packages/manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-unity-library-
+      - name: Run Tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: .
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
+          coverageResultsPath: 'CodeCoverage'
+          failOnCoverage: 75%
+      - name: Print Working Directory
+        run: pwd
+      - name: List Files
+        run: ls -l
+      - name: List Files 2
+        run: ls -l CodeCoverage
+      - name: List Files 3
+        run: ls -l CodeCoverage/Report
+      - name: Upload Code Coverage
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} 
+          files: CodeCoverage/**/*.xml
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Test Results
+          path: CodeCoverage/**/*.xml
+      - name: Check Code Coverage
+        run: |
+          echo "Running xmllint command..."
+          xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml
+          # Extract coverage value from the XML file
+          coverage=$(xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml)
+
+          # Check if coverage is empty
+          if [[ -z "$coverage" ]]; then
+            throw_error "Error: Coverage value is missing or invalid."
+            exit 1
+          fi
+
+          echo "Coverage: $coverage"
+          threshold="0.80"
+
+          # Compare coverage against the threshold using bc
+          if (( $(echo "$coverage < $threshold" | bc -l) )); then 
+            echo "Code coverage ($coverage) is below the threshold ($threshold)"
+            exit 1 
+          fi
