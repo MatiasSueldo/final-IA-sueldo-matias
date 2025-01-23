@@ -56,7 +56,7 @@ jobs:
           coverage=$(xmllint --xpath 'string(//coverage/@line-rate)' CodeCoverage/Report/Summary.xml)
           echo "Coverage: $coverage"
           threshold="0.80" 
-          if (( $(echo "$coverage < $threshold" | bc -l) )); then 
+          if ($(echo "$coverage < $threshold" | bc -l)); then 
             echo "Code coverage ($coverage) is below the threshold ($threshold)"
             exit 1 
           fi
