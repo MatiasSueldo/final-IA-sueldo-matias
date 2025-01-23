@@ -61,7 +61,7 @@ jobs:
 
           # Check if coverage is empty
           if [[ -z "$coverage" ]]; then
-            echo "Error: Coverage value is missing or invalid."
+            throw_error "Error: Coverage value is missing or invalid."
             exit 1
           fi
 
