@@ -33,7 +33,7 @@ jobs:
           projectPath: .
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
           coverageResultsPath: 'CodeCoverage'
-          failOnCoverage: 75 
+          failOnCoverage: 75%
       - name: Print Working Directory
         run: pwd
       - name: List Files
